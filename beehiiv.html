@@ -1,0 +1,3293 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <style>
+
+
+        body {
+            margin-right: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            background-color: rgb(255, 246, 255);
+            
+        }
+
+
+        .headerdiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+
+        .leftdiv {
+            font-size: 22px;
+            font-family: Satoshi, system-ui, -apple;
+            color: black;
+            font-weight: 700;
+            margin-left: 60px;
+            cursor: pointer;
+            
+        }
+
+
+        .middlediv {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin-right: 80px;
+            margin-left: 60px;
+            align-items: center;
+           
+            column-gap: 20px;
+
+        }
+
+        .solutions,
+        .resources,
+        .pricing,
+        .careers,
+        .course {
+            
+            border: none;
+            font-family: Satoshi, system-ui, -apple;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            
+            
+            
+        }
+
+
+        .rightdiv {
+            display: flex;
+            flex-direction: row;
+            width: 270px;
+            align-items: center;
+            margin-right: 20px;     
+        }
+
+
+        .login {
+            font-family: Satoshi, system-ui, -apple;
+            color: black;
+            font-size: 15px;
+            font-weight: 500;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+
+        .getstarted {
+            font-family: Satoshi, system-ui, -apple;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 32px;
+            padding-right: 32px;
+            font-weight: 500;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .headerdiv {@media (max-width: 1008.8px) {
+            .headerdiv {
+                opacity: 1;
+                
+            }
+
+            .middlediv {
+                opacity: 0;
+                margin-right: 0;
+            margin-left: 0;
+            column-gap: 0;
+            width: 5px;
+            }
+
+            .leftdiv {
+            font-size: 30px;
+            font-family: Satoshi, system-ui, -apple;
+            color: black;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+
+   
+            
+        }}
+
+
+
+        @media (max-width: 743.2px) {
+
+            .headerdiv {
+                opacity: 1;
+                
+            }
+
+            .middlediv {
+                opacity: 0;
+                margin-right: 0;
+            margin-left: 0;
+            column-gap: 0;
+            width: 5px;
+            }
+
+            .leftdiv {
+            font-size: 21px;
+            font-family: Satoshi, system-ui, -apple;
+            color: black;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+
+        .rightdiv {
+            display: flex;
+            flex-direction: row;
+            width: 270px;
+            align-items: center;
+            margin-right: 0; 
+        }
+
+        .login {
+            opacity: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-right: 0;
+        }
+
+
+        .getstarted {
+            font-family: Satoshi, system-ui, -apple;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 31px;
+            padding-right: 31px;
+            font-weight: 500;
+            border-radius: 50px;
+            border: none;
+        }
+
+
+
+        
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .descriptiondiv {
+            display: flex;
+            flex-direction: column;
+            margin-top: 90px;
+            margin-right: 0;
+            margin-left: 0;
+            
+            
+    
+        }
+
+
+        .titlediv {
+            font-size: 70px;
+            font-family: __headingFont_961f61, __headingFont_Fallback_961f61, sans;
+            color: black;
+            font-weight: 700;
+            text-align: center;
+            
+            padding-right: 100px;
+            padding-left: 100px;
+            
+        }
+
+
+        .smalldescriptiondiv {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        .smalldescriptiontopdiv,
+        .smalldescriptionmiddlediv,
+        .smalldescriptionbottomdiv {
+            color: black;
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 24px;
+
+        }
+
+
+        .startanewsletterdiv {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+
+        .startanewsletterbutton {
+            background-color: black;
+            color: white;
+            font-family:  __headingFont_961f61, __headingFont_Fallback_961f61, sans;
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 32px;
+            padding-right: 32px;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+            
+        }
+
+
+        
+     @media (max-width:743.2px) {
+        .titlediv {
+            font-size: 50px;
+            font-family: __headingFont_961f61, __headingFont_Fallback_961f61, sans;
+            color: black;
+            font-weight: 700;
+            text-align: center;
+           
+            padding-right: 60px;
+            padding-left: 60px;
+            
+        }
+     }
+
+
+     
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+
+        .gradient {
+            width: 100%;
+            margin-top: -130px;
+            height: 700px;
+            margin-top: 0px;
+            position: absolute;
+        }
+
+
+        .imgdiv {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 200px;
+        }
+
+
+
+
+        .img1 {
+            width: 400px;
+            margin-left: -190px;
+        }
+
+
+        
+
+
+        .img2 {
+            width: 400px;
+        }
+
+
+        
+
+
+        .img3 {
+            width: 400px;
+            
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .newslettersmaindiv {
+            margin-top: 100px;
+        }
+
+
+        .poweringdiv {
+            font-family: __headingFont_961f61, __headingFont_Fallback_961f61, sans;
+            font-size: 36px;
+            font-weight: 700;
+            color: black;
+            text-align: center;
+        }
+
+
+        .powerimagesdiv {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+        }
+        
+        
+        .powerimagesdiv img {
+            width: 130.1px;
+        }
+
+
+        .imagesdiv1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+
+        .imagesdiv1 div {
+            margin-right: 20px;
+            
+            width: 100%;
+            
+        }
+
+
+        .imagesdiv2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv2 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv3 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv4 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv5 div {
+            margin-right: 20px;
+            
+        }
+
+ @media (max-width: 830.4px) {
+    .powerimagesdiv {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+        }
+        
+        
+        .powerimagesdiv img {
+            width: 90px;
+        }
+
+
+        .imagesdiv1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            margin-right: 20px;
+        }
+
+
+        .imagesdiv1 div {
+            margin-right: 20px;
+            
+            width: 100%;
+            
+        }
+
+
+        .imagesdiv2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv2 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv3 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv4 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv5 div {
+            margin-right: 20px;
+            
+        }
+ }
+
+   
+ @media (max-width: 580.8px) {
+    .powerimagesdiv {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+        }
+        
+        
+        .powerimagesdiv img {
+            width: 70px;
+        }
+
+
+        .imagesdiv1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            margin-right: 0px;
+        }
+
+
+        .imagesdiv1 div {
+            margin-right: 20px;
+            
+            width: 100%;
+            
+        }
+
+
+        .imagesdiv2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv2 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv3 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv4 div {
+            margin-right: 20px;
+            
+        }
+
+
+        .imagesdiv5 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+
+        .imagesdiv5 div {
+            margin-right: 20px;
+            
+        }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .maindiv {
+            margin-top: 160px;
+        }
+
+
+        .heading-div {
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+
+        .middle-div {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji";
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+
+        .bottom-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 20px;
+            margin-right: 20px;
+            row-gap: 60px;
+        }
+
+
+        .image-1{
+            width: 471.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .sendparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .introdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .arrowbutton {
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            border-radius: 60px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .image-2wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-2{
+            width: 471.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .scaleparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .suitediv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-3 {
+            width: 471.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .knowdiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .firstdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-4wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-4{
+            width: 471.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .monetizediv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .whetherdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+         @media (max-width:1019.2px) {
+            .maindiv {
+            margin-top: 160px;
+        }
+
+
+        .heading-div {
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+
+        .middle-div {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji";
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+
+        .bottom-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 20px;
+            margin-right: 20px;
+            row-gap: 60px;
+        }
+
+
+        .image-1{
+            width: 390.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .sendparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .introdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .arrowbutton {
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            border-radius: 60px;
+            border: none;
+        }
+
+
+        .image-2wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-2{
+            width: 390.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .scaleparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .suitediv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-3 {
+            width: 390.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .knowdiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .firstdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-4wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-4{
+            width: 390.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .monetizediv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .whetherdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+         }
+
+
+
+         @media (max-width:851.2px) {
+            .maindiv {
+            margin-top: 160px;
+        }
+
+
+        .heading-div {
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+
+        .middle-div {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji";
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+
+        .bottom-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 20px;
+            margin-right: 20px;
+            row-gap: 60px;
+        }
+
+
+        .image-1{
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .sendparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .introdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .arrowbutton {
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            border-radius: 60px;
+            border: none;
+        }
+
+
+        .image-2wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-2{
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .scaleparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .suitediv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-3 {
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .knowdiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .firstdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-4wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-4{
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .monetizediv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .whetherdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+         }
+
+       
+
+         @media (max-width:851.2px) {
+            .maindiv {
+            margin-top: 160px;
+        }
+
+
+        .heading-div {
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+
+        .middle-div {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji";
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+
+        .bottom-div {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 20px;
+            margin-right: 20px;
+            row-gap: 60px;
+        }
+
+
+        .image-1{
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .sendparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .introdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .arrowbutton {
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            color: white;
+            border-radius: 60px;
+            border: none;
+        }
+
+
+        .image-2wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-2{
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .scaleparadiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .suitediv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-3 {
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .knowdiv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .firstdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+
+
+        .image-4wholediv {
+            padding-left: 40px;
+        }
+
+
+        .image-4{
+            width: 290.6px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .monetizediv {
+            font-family: roboto,arial;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+
+        .whetherdiv {
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 18px;
+            color: black;
+        }
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .createdbuttondiv {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 140px;
+            
+            
+        }
+
+
+        .createdbutton {
+            padding-top: 40px;
+            padding-left: 48px;
+            padding-right: 48px;
+            background-color: black;
+            color: white;
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            border: none;
+            border-radius: 20px;
+            
+        }
+
+
+        .millions {
+            color: rgb(249, 4, 200);
+            margin-top: 0;
+        }
+
+
+
+
+        @media (max-width:982.4px) {
+            .createdbuttondiv {
+                margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 140px;
+            
+        }
+
+
+        .createdbutton {
+            padding-top: 40px;
+            padding-left: 48px;
+            padding-right: 48px;                      
+            background-color: black;
+            color: white;
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            border: none;
+            border-radius: 20px;
+        }
+
+
+        .millions {
+            color: rgb(249, 4, 200);
+            margin-top: 0;
+        }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .anexpansivediv {
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-left: 70.5375px;
+            margin-right: 70.5375px;
+            margin-top: 100px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .gradient-1againdiv {
+            position: relative;
+        }
+
+
+        .gradient-1again {
+            height: 400px;
+            width: 100%;
+            
+            
+        }
+
+
+        .unlockmaindiv {
+            background-color: black;
+            margin-right: 350px;
+            margin-left: 80px;
+            margin-top: -300px;
+            padding-bottom: 250px;
+            border-radius: 30px;
+            position: absolute;
+            padding-right: 300px;
+            
+        }
+
+
+        .unlockdiv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            padding-top: 200px;
+            padding-left: 60px;
+            
+            
+        }
+
+
+        .movingdiv {
+            color: white;
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 60px;
+            margin-top: 20px;
+        }
+
+
+        .makebutton {
+            background-color: rgb(32, 155, 241);
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 400;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-bottom: 20px;
+            padding-right: 70px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-top: 40px;
+            margin-left: 60px;
+            cursor: pointer;
+        }
+
+
+        .estimatemaindiv {
+            background-color: rgb(39, 39, 42);
+            padding-bottom: 60px;
+            margin-right: 80px;
+            margin-left: 500px;
+            margin-top: -230px;
+            position: absolute;
+            border-radius: 30px;
+        }
+
+
+        .estimatediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 40px;
+            margin-top: 50px;
+        }
+
+
+        .noofsubscribersdiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .monthlysubscriptiondiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .pricediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+
+        .dollar {
+            color: rgb(251, 4, 222);
+            font-size: 30px;
+            font-weight: 700;
+            font-family: roboto,arial;
+            margin-right: 5px;
+        }
+
+
+        .incpricediv {
+           color: white;
+           font-family: roboto,arial;
+           margin-left: 40px;
+           margin-top: 5px;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+        }
+
+
+        .descriptionsmalldiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+
+
+        @media (max-width:1063.2px) {
+            .gradient-1againdiv {
+            position: relative;
+        }
+
+
+        .gradient-1again {
+            height: 400px;
+            width: 100%;
+            
+            
+        }
+
+
+        .unlockmaindiv {
+            background-color: black;
+            margin-right: 200px;
+            margin-left: 20px;
+            margin-top: -300px;
+            padding-bottom: 250px;
+            border-radius: 30px;
+            position: absolute;
+            padding-right: 300px;
+            
+        }
+
+
+        .unlockdiv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            padding-top: 200px;
+            padding-left: 60px;
+            margin-right: 100px;
+            
+            
+        }
+
+
+        .movingdiv {
+            color: white;
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 60px;
+            margin-top: 20px;
+            margin-right: 100px;
+        }
+
+
+        .makebutton {
+            background-color: rgb(32, 155, 241);
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 400;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-bottom: 20px;
+            padding-right: 70px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-top: 40px;
+            margin-left: 60px;
+        }
+
+
+        .estimatemaindiv {
+            background-color: rgb(39, 39, 42);
+            padding-bottom: 60px;
+            margin-right: 50px;
+            margin-left: 420px;
+            margin-top: -230px;
+            position: absolute;
+            border-radius: 30px;
+        }
+
+
+        .estimatediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 40px;
+            margin-top: 50px;
+        }
+
+
+        .noofsubscribersdiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .monthlysubscriptiondiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .pricediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+
+        .dollar {
+            color: rgb(251, 4, 222);
+            font-size: 30px;
+            font-weight: 700;
+            font-family: roboto,arial;
+            margin-right: 5px;
+        }
+
+
+        .incpricediv {
+           color: white;
+           font-family: roboto,arial;
+           margin-left: 40px;
+           margin-top: 5px;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+        }
+
+
+        .descriptionsmalldiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        }    
+
+
+
+        @media (max-width:955.2px) {
+            .gradient-1againdiv {
+            position: relative;
+        }
+
+
+        .gradient-1again {
+            height: 400px;
+            width: 100%;
+            
+            
+        }
+
+
+        .unlockmaindiv {
+            background-color: black;
+            margin-right: 200px;
+            margin-left: 20px;
+            margin-top: -300px;
+            padding-bottom: 250px;
+            border-radius: 30px;
+            position: absolute;
+            padding-right: 300px;
+            
+        }
+
+
+        .unlockdiv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 36px;
+            font-weight: 700;
+            padding-top: 200px;
+            padding-left: 20px;
+            margin-right: 100px;
+            
+            
+        }
+
+
+        .movingdiv {
+            color: white;
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-right: 160px;
+        }
+
+
+        .makebutton {
+            background-color: rgb(32, 155, 241);
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 400;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+
+        .estimatemaindiv {
+            background-color: rgb(39, 39, 42);
+            padding-bottom: 60px;
+            margin-right: 50px;
+            margin-left: 300px;
+            margin-top: -230px;
+            position: absolute;
+            border-radius: 30px;
+        }
+
+
+        .estimatediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 40px;
+            margin-top: 50px;
+        }
+
+
+        .noofsubscribersdiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .monthlysubscriptiondiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .pricediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+
+        .dollar {
+            color: rgb(251, 4, 222);
+            font-size: 30px;
+            font-weight: 700;
+            font-family: roboto,arial;
+            margin-right: 5px;
+        }
+
+
+        .incpricediv {
+           color: white;
+           font-family: roboto,arial;
+           margin-left: 40px;
+           margin-top: 5px;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+        }
+
+
+        .descriptionsmalldiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        }
+
+
+
+
+
+
+        @media (max-width:861.6px) {
+            .gradient-1againdiv {
+            position: relative;
+        }
+
+
+        .gradient-1again {
+            height: 400px;
+            width: 100%;
+            
+            
+        }
+
+
+        .unlockmaindiv {
+            opacity: 0;
+            
+        }
+
+
+        .unlockdiv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 0px;
+            font-weight: 0;
+            padding-top: 0px;
+            padding-left: 0px;
+            margin-right: 0px;
+            
+            
+        }
+
+
+        .movingdiv {
+            color: white;
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 0px;
+            font-weight: 0;
+            padding-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+
+
+        .makebutton {
+            background-color: rgb(32, 155, 241);
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 0;
+            font-size: 0px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+            padding-right: 0px;
+            border-radius: 0px;
+            border: none;
+            color: white;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+
+        .estimatemaindiv {
+            background-color: rgb(39, 39, 42);
+            padding-bottom: 60px;
+            margin-right: 50px;
+            margin-left: 20px;
+            margin-top: -230px;
+            position: absolute;
+            border-radius: 30px;
+            
+        }
+
+
+        .estimatediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 40px;
+            margin-top: 50px;
+            
+        }
+
+
+        .noofsubscribersdiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .monthlysubscriptiondiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbutton {
+            padding: 16px;
+            width:  391.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .pricediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+
+        .dollar {
+            color: rgb(251, 4, 222);
+            font-size: 30px;
+            font-weight: 700;
+            font-family: roboto,arial;
+            margin-right: 5px;
+        }
+
+
+        .incpricediv {
+           color: white;
+           font-family: roboto,arial;
+           margin-left: 40px;
+           margin-top: 5px;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+        }
+
+
+        .descriptionsmalldiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        }
+
+
+
+
+
+        @media (max-width:552.8px) {
+            .gradient-1againdiv {
+            position: relative;
+        }
+
+
+        .gradient-1again {
+            height: 400px;
+            width: 100%;
+            
+            
+        }
+
+
+        .unlockmaindiv {
+            opacity: 0;
+            
+        }
+
+
+        .unlockdiv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 0px;
+            font-weight: 0;
+            padding-top: 0px;
+            padding-left: 0px;
+            margin-right: 0px;
+            
+            
+        }
+
+
+        .movingdiv {
+            color: white;
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 0px;
+            font-weight: 0;
+            padding-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+
+
+        .makebutton {
+            background-color: rgb(32, 155, 241);
+            font-family: Satoshi, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 0;
+            font-size: 0px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+            padding-right: 0px;
+            border-radius: 0px;
+            border: none;
+            color: white;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+
+        .estimatemaindiv {
+            background-color: rgb(39, 39, 42);
+            padding-bottom: 60px;
+            margin-right: 50px;
+            margin-left: 20px;
+            margin-top: -230px;
+            position: absolute;
+            border-radius: 30px;
+            
+        }
+
+
+        .estimatediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 40px;
+            margin-top: 50px;
+            
+        }
+
+
+        .noofsubscribersdiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .noofsubscribersbutton {
+            padding: 16px;
+            width:  300.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .monthlysubscriptiondiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbuttondiv {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+        .monthlysubscriptionbutton {
+            padding: 16px;
+            width:  300.263px;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        .pricediv {
+            color: white;
+            font-family: roboto,arial;
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+
+        .dollar {
+            color: rgb(251, 4, 222);
+            font-size: 30px;
+            font-weight: 700;
+            font-family: roboto,arial;
+            margin-right: 5px;
+        }
+
+
+        .incpricediv {
+           color: white;
+           font-family: roboto,arial;
+           margin-left: 40px;
+           margin-top: 5px;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+        }
+
+
+        .descriptionsmalldiv {
+            color: white;
+            font-family: roboto,arial;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .lastmaindiv {
+            margin-top: 800px;
+            background-color: black;
+            text-align: center;
+            padding-top: 150px;
+            padding-bottom: 200px;
+        }
+
+
+        .getdiv {
+            font-family: Helvetica;
+            font-size: 40px;
+            font-weight: 700;
+            color: white;
+            
+        }
+
+
+        .bydiv {
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+            margin-top: 50px;
+        }
+
+
+        .enterbuttondiv {
+            margin-top: 50px;
+        }
+
+
+        .enterbutton {
+            padding-top: 23.5px;
+            padding-bottom: 25px;
+            padding-left: 190px;
+            padding-right: 190px;
+            border-top-left-radius: 20px;
+            border-color: rgb(247, 9, 196);
+        }
+
+
+        .subscribebutton {
+            padding-top: 25px;
+            padding-bottom: 27px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: rgb(247, 9, 196);
+            color: white;
+            border: none;
+            border-top-right-radius: 20px;
+            cursor: pointer;
+
+        }
+
+
+        .beehiivbottom {
+            color: white;
+            font-family: arial,roboto;
+            font-size: 70px;
+            font-weight: 700;
+            margin-top: 200px;
+            cursor: pointer;
+        }
+
+
+        @media (max-width:651.2px) {
+            .enterbuttondiv {
+            margin-top: 50px;
+        }
+
+
+        .enterbutton {
+            padding-top: 23.5px;
+            padding-bottom: 25px;
+            padding-left: 100px;
+            padding-right: 100px;
+            border-top-left-radius: 20px;
+            border-color: rgb(247, 9, 196);
+        }
+
+
+        .subscribebutton {
+            padding-top: 25px;
+            padding-bottom: 27px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: rgb(247, 9, 196);
+            color: white;
+            border: none;
+            border-top-right-radius: 20px;
+
+        }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .headerdowndiv {
+            font-size: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 100px;
+            column-gap: 10px;
+        }
+
+
+        .writediv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .growdiv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .monetizedowndiv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .analyzediv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .careersdiv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .pricingdiv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .shopdiv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .comparediv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .lovediv {
+            color: rgb(247, 9, 196);
+            cursor: pointer;
+        }
+
+
+        .rightdivdown {
+            color: rgb(156, 163, 175);
+            font-size: 25px;
+            margin-top: 100px;
+        }
+
+
+        .promotiondiv {
+            font-family: roboto,arial;
+            margin-top: 100px;
+        }
+
+
+        .promotiontop {
+            color: rgb(8, 152, 214);
+            font-size: 50px;
+        }
+
+
+        .promotionmiddle {
+            color: white;
+            font-size: 30px;
+        }
+
+
+        .promotiondown {
+            color: rgb(8, 152, 214);
+            font-size: 50px;
+        }
+
+
+
+
+
+        @media (max-width:1001.6px) {
+            .headerdowndiv {
+            font-size: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 100px;
+        }
+
+
+        .writediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .growdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .monetizedowndiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .analyzediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .careersdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .pricingdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .shopdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .comparediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .lovediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .rightdivdown {
+            color: rgb(156, 163, 175);
+            font-size: 25px;
+            margin-top: 100px;
+        }
+
+
+        .promotiondiv {
+            font-family: roboto,arial;
+            margin-top: 100px;
+        }
+
+
+        .promotiontop {
+            color: rgb(8, 152, 214);
+            font-size: 50px;
+        }
+
+
+        .promotionmiddle {
+            color: white;
+            font-size: 30px;
+        }
+
+
+        .promotiondown {
+            color: rgb(8, 152, 214);
+            font-size: 50px;
+        }
+        }
+
+
+
+
+
+        @media (max-width:843.2px) {
+            @media (max-width:1001.6px) {
+            .headerdowndiv {
+            font-size: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            justify-content: space-between;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 100px;
+            row-gap: 40px;
+        }
+
+
+        .writediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .growdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .monetizedowndiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .analyzediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .careersdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .pricingdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .shopdiv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .comparediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .lovediv {
+            color: rgb(247, 9, 196);
+        }
+
+
+        .rightdivdown {
+            color: rgb(156, 163, 175);
+            font-size: 25px;
+            margin-top: 100px;
+        }
+
+
+        .promotiondiv {
+            font-family: roboto,arial;
+            margin-top: 100px;
+        }
+
+
+        .promotiontop {
+            color: rgb(8, 152, 214);
+            font-size: 50px;
+        }
+
+
+        .promotionmiddle {
+            color: white;
+            font-size: 30px;
+        }
+
+
+        .promotiondown {
+            color: rgb(8, 152, 214);
+            font-size: 30px;
+        }
+        }
+        }
+
+
+
+       
+
+
+
+
+        
+
+
+        
+
+
+
+
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+    <div class="headerdiv">
+
+
+        <div class="leftdiv">beehiiv</div>
+
+
+        <div class="middlediv">
+            <div><button class="solutions">Solutions&or;</button></div>
+            <div><button class="resources">Resources&or;</button></div>
+            <div><button class="pricing">Pricing</button></div>
+            <div><button class="careers">Careers</button></div>
+            <div><button class="course">Course</button></div>
+        </div>
+
+
+        <div class="rightdiv">
+            <div><button class="login">Login</button></div>
+            <div><button class="getstarted">Get Started &rarr;</button></div>
+        </div>
+
+
+    </div>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="descriptiondiv">
+
+
+    <div class="titlediv">The newsletter platform built for growth</div>
+
+
+
+    <div class="smalldescriptiondiv">
+        <div class="smalldescriptiontopdiv">The most successful newsletters in the</div>
+        <div class="smalldescriptionmiddlediv">world have access to the best tools —</div>
+        <div class="smalldescriptionbottomdiv">and now so do you.</div> 
+    </div>
+
+
+    <div class="startanewsletterdiv"><button class="startanewsletterbutton">Start a newsletter &rarr;</button></div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="gradientdiv"><img class="gradient" src="gradient-1.png"></div>
+
+    <div class="imgdiv">
+        <div class="img1div"><img class="img1" src="screen-1.svg"></div>
+        <div class="img1div"><img class="img1" src="screen-2.svg"></div>
+        <div class="img1div"><img class="img1" src="screen-3.svg"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="newslettersmaindiv">
+
+
+        <div class="poweringdiv">Powering the world's top newsletters</div>
+
+
+        <div class="powerimagesdiv">
+            <div class="imagesdiv1">
+            <div><img src="overtime-logo.svg"></div>
+            <div><img src="the_boston_globe.png"></div>
+            <div><img src="milkroad_new.svg"></div>
+            <div><img src="cult-of-mac.svg"></div>
+            <div><img src="daily-drop.svg"></div>
+            </div>
+            <div class="imagesdiv2">
+            <div><img src="exec_sum.svg"></div>
+            <div><img src="what-do-you-meme.svg"></div>
+            <div><img src="fantasy_life_grayscale.svg"></div>
+            <div><img src="rap-tv.svg"></div>
+            <div><img src="duffel-blog.svg"></div>
+            </div>
+            <div class="imagesdiv3">
+            <div><img src="playmaker.png"></div>
+            <div><img src="clickhole.svg"></div>
+            <div><img src="the-dink-logo.svg"></div>
+            <div><img src="future-party.svg"></div>
+            <div><img src="the-geekout.svg"></div>
+            </div>
+            <div class="imagesdiv4">
+            <div><img src="awa.svg"></div>
+            <div><img src="madhappy.svg"></div>
+            <div><img src="publish_press.svg"></div>
+            <div><img src="payload.svg"></div>
+            <div><img src="bens-bites.svg"></div>
+            </div>
+            <div class="imagesdiv5">
+            <div><img src="the-neuron.svg"></div>
+            <div><img src="miss-excel.svg"></div>
+            <div><img src="roca-news.svg"></div>
+            <div><img src="the-rundown.svg"></div>
+            <div><img src="resume-worded.svg"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="maindiv">
+
+
+        <div class="heading-div">All-in-one solution</div>
+
+
+        <div class="middle-div">Why piece together (and pay for) a dozen different tools when you can do it all with beehiiv?</div>
+
+
+        <div class="bottom-div">
+        
+            <div class="image-1wholediv">
+            <img class="image-1" src="1.avif">
+            <div class="sendparadiv">Send customized newsletters</div>
+            <div class="introdiv">Introducing the best, most flexible editor in email. Why look like every other newsletter?</div>
+            <div class="arrowbuttondiv"><button class="arrowbutton">&rarr;</button></div>
+            </div>
+
+            <div class="image-2wholediv">
+            <img class="image-2" src="2.avif">
+            <div class="scaleparadiv">Scale your audience</div>
+            <div class="suitediv">A suite of world-class growth tools built by the newsletter industry's best.</div>
+            <div class="arrowbuttondiv"><button class="arrowbutton">&rarr;</button></div>
+            </div>
+
+            <div class="image-3wholediv">
+            <img class="image-3" src="3.avif">
+            <div class="knowdiv">Know your readers</div>
+            <div class="firstdiv">First party audience data, advanced segmentation, and more...all offered completely out of the box.</div>
+            <div class="arrowbuttondiv"><button class="arrowbutton">&rarr;</button></div>
+            </div>
+
+            <div class="image-4wholediv">
+            <img class="image-4" src="4.avif">
+            <div class="monetizediv">Monetize your audience</div>
+            <div class="whetherdiv">Whether you’re looking for recurring subscription revenue or chasing ad dollars, we've got world-class solutions to assist.</div>
+            <div class="arrowbuttondiv"><button class="arrowbutton">&rarr;</button></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="createdbuttondiv"><button class="createdbutton">Created by the same team that built and scaled Morning Brew to <p class="millions">millions of subscribers.</p></button></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="anexpansivediv">An expansive feature suite so you can create, monetize, and scale with ease.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="gradient-1againdiv"><img class="gradient-1again" src="gradient-1.png"></div>
+
+    <div class="blocksmaindiv">
+
+    <div class="unlockmaindiv">
+        <div class="unlockdiv">Unlock more earnings</div>
+        <div class="movingdiv">Moving from Substack can save you close to 10% in fees alone.</div>
+        <button class="makebutton">Make the switch</button>
+    </div>
+
+    <div class="estimatemaindiv">
+        <div class="estimatediv">Estimate your earnings with premium subscriptions</div>
+        <div class="noofsubscribersdiv">Number of subscribers</div>
+        <div class="noofsubscribersbuttondiv"><input class="noofsubscribersbutton" type="text" placeholder="No of subscribers"></div>
+        <div class="monthlysubscriptiondiv">Monthly subscription cost</div>
+        <div class="monthlysubscriptionbuttondiv"><input class="monthlysubscriptionbutton" type="text" placeholder="Monthly subscription cost"></div>
+        <div class="pricediv">$109,320/year</div>
+        <div class="incpricediv"><p class="dollar">$11,652</p> more than Substack</div>
+        <div class="descriptionsmalldiv">*While we don't charge any fees—our payment partner, Stripe, charges an industry-standard 2.9% fee + $0.30/transaction.</div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="lastmaindiv">
+
+        <div class="getdiv">Get beehiiv updates delivered directly to your inbox.</div>
+        <div class="bydiv">By the way—this embed form was created using our custom subscribe form feature 😉</div>
+        <div class="enterbuttondiv"><input class="enterbutton" type="text" placeholder="Enter your email"><button class="subscribebutton">Subscribe</button></div>
+        <div class="beehiivbottom">beehiiv</div>
+
+
+        <div class="headerdowndiv">
+            <div class="writediv">Write</div>
+            <div class="growdiv">Grow</div>
+            <div class="monetizedowndiv">Monetize</div>
+            <div class="analyzediv">Analyze</div>
+            <div class="careersdiv">careers</div>
+            <div class="pricingdiv">Pricing</div>
+            <div class="shopdiv">Shop</div>
+            <div class="comparediv">Compare</div>
+            <div class="lovediv">Love</div>
+        </div>
+
+        <div class="rightdivdown">© 2023 beehiiv, Inc. All rights reserved.</div>
+
+        <div class="promotiondiv">
+            <div class="promotiontop">MADE BY BHAVAN</div>
+            <div class="promotionmiddle">feel free to contact me at</div>
+            <div class="promotiondown">bhavanprofessional@gmail.com</div>
+        </div>
+
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+
+
+
+</html>
